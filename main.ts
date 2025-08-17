@@ -12,7 +12,8 @@ namespace game {
     //% colorInputText.defl=11
     //% colorPrompt.defl=8
     //% colorBottomBackground.defl=5
-    //% group=['Prompt']
+    //% group=['Prompt'] 
+    //% help=github.io/docs/gameprompt
     export function askForStringThemeForPrompt(colorAlphabet: number, colorBackground: number, colorBottomBackground: number, colorBottomText: number, colorCursor: number, colorInput: number, colorInputHighlighted: number, colorInputText: number, colorPrompt: number) {
         return _prompt.theme = { colorAlphabet: colorAlphabet, colorBackground: colorBackground, colorBottomBackground: colorBottomBackground, colorBottomText: colorBottomText, colorCursor: colorCursor, colorInput: colorInput, colorInputHighlighted: colorInputHighlighted, colorInputText: colorInputText, colorPrompt: colorPrompt }
     }
