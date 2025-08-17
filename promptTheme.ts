@@ -12,7 +12,7 @@ namespace game {
     //% colorInputText.defl=11
     //% colorPrompt.defl=8
     //% colorBottomBackground.defl=5
-    //% group="Prompt"
+    //% group=["Prompt"]
     //% inlineInputMode=inline 
      //% help=github:arcade-prompt-text/docs/game-prompt-theme
     export function askForStringThemeForPrompt(colorAlphabet: number, colorBackground: number, colorBottomBackground: number, colorBottomText: number, colorCursor: number, colorInput: number, colorInputHighlighted: number, colorInputText: number, colorPrompt: number) {
