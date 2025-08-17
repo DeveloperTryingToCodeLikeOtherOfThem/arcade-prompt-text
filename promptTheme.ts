@@ -2,7 +2,7 @@
 namespace game {
     let _prompt = new game.Prompt()
 
-    //% blockId="gamethemeforprompt" block="ask for string theme for the prompt text message $colorAlphabet $colorBackground $colorBottomBackground $colorBottomText $colorCursor $colorInput $colorInputHighlighted $colorInputText $colorPrompt"
+    //% blockId="gamethemeforprompt" block="ask for string theme for the prompt text message $message $answerLength $colorAlphabet $colorBackground $colorBottomBackground $colorBottomText $colorCursor $colorInput $colorInputHighlighted $colorInputText $colorPrompt"
     //% colorAlphabet.defl=4
     //% colorBackground.defl=15
     //% colorBottomText.defl=3
@@ -15,7 +15,8 @@ namespace game {
     //% group="Prompt"
     //% inlineInputMode=inline 
      //% help=github:arcade-prompt-text/docs/game-prompt-theme
-    export function askForStringThemeForPrompt(colorAlphabet: number, colorBackground: number, colorBottomBackground: number, colorBottomText: number, colorCursor: number, colorInput: number, colorInputHighlighted: number, colorInputText: number, colorPrompt: number) {
+    export function askForStringThemeForPrompt(message: string, answerLength: number, colorAlphabet: number, colorBackground: number, colorBottomBackground: number, colorBottomText: number, colorCursor: number, colorInput: number, colorInputHighlighted: number, colorInputText: number, colorPrompt: number) {
+      _prompt.show(message, answerLength)
         return _prompt.theme = { colorAlphabet: colorAlphabet, colorBackground: colorBackground, colorBottomBackground: colorBottomBackground, colorBottomText: colorBottomText, colorCursor: colorCursor, colorInput: colorInput, colorInputHighlighted: colorInputHighlighted, colorInputText: colorInputText, colorPrompt: colorPrompt }
     }
 
