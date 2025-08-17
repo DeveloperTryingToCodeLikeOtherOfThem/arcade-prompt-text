@@ -2,7 +2,11 @@
 namespace game {
     let _prompt = new game.Prompt()
 
-    //% blockId="gamethemeforprompt" block="ask for string theme for the prompt text message $message=text $answerLength=number $colorAlphabet $colorBackground $colorBottomBackground $colorBottomText $colorCursor $colorInput $colorInputHighlighted $colorInputText $colorPrompt"
+    //% blockId="gamethemeforprompt" block="ask for string theme for the prompt text message $message $answerLength $colorAlphabet $colorBackground $colorBottomBackground $colorBottomText $colorCursor $colorInput $colorInputHighlighted $colorInputText $colorPrompt"
+    //% message.shadow=text 
+    //% answerLength.defl=12
+    //% answerLength.max=24
+    //% answerLength.min=1
     //% colorAlphabet.defl=4
     //% colorBackground.defl=15
     //% colorBottomText.defl=3
